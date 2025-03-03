@@ -14,7 +14,7 @@ const origins = process.env.MIDDLEWARE_ALLOWED_ORIGINS
   : ["http://localhost:3000"];
 
 const corsOptions = {
-  origin: origins, // Adjusted to allow specific origins
+  origin: "*", // Adjusted to allow specific origins
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
 };
